@@ -137,7 +137,7 @@ class Generator:
             messages=[
                 {"role": "system", "content": "You are a helpful assistant trying to answer questions. "
                 "Be honest about your limitations and don't be overly formal. "
-                "Cite your sources."},
+                "Cite your sources like this: (source.pdf)"},
                 {"role": "user", "content": prompts[-1]},
             ],
             temperature=0,
@@ -168,8 +168,10 @@ if __name__ == "__main__":
 
     while True:
         user_input = input("You: ")  # Taking user input from the CLI
-        print(f"User: {user_input}")
         if user_input =="Exit":
             break
+        print(f"User: {user_input}")
         response = chatbot.answer(user_input)
         print(f"Chatbot: {response}")
+        print(" ")
+        print(" ")
