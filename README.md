@@ -1,2 +1,2 @@
 # vashon-rag
-A simple rag to answer questions about Vashon Island.
+A simple rag-based chatbot to answer questions about Vashon Island.
