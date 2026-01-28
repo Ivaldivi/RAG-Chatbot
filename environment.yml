@@ -1,0 +1,22 @@
+name: rag-env
+channels:
+  - conda-forge
+  - bioconda
+  - pypi
+  - pytorch
+  - nvidia
+  - grst
+  - nextstrain
+  - numba
+  - dmentipl
+  - biocore
+dependencies:
+  - openai
+  - pip
+  - python=3.11
+  - requests
+  - bs4
+  - validators
+  - user-agents
+  - pypdf
+prefix: /home/ivaldivi/.conda/envs/rag-env
