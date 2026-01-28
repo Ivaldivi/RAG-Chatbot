@@ -17,7 +17,7 @@ def ingest_context(file_paths, openai_client, max_chars=1000, overlap=200):
         overlap (int): number of chars allowed to overlap between chunks.
     """ 
     chroma_client = chromadb.Client(Settings(allow_reset=True))
-    collection = chroma_client.create_collection("rag_test")
+    collection = chroma_client.get_or_create_collection("vashon_test")
     for file in file_paths: 
         file_name = file.split("/")[-1]
         reader = PdfReader(file)
@@ -168,5 +168,8 @@ if __name__ == "__main__":
 
     while True:
         user_input = input("You: ")  # Taking user input from the CLI
+        print(user_input)
+        if user_input =="Exit":
+            break
         response = chatbot.answer(user_input)
         print(f"Chatbot: {response}")
