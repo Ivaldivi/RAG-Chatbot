@@ -13,7 +13,7 @@ I created a basic chatbot enhanced with RAG. RAGs are used to enhance the knowle
 
 ### Setup: 
 I have included an environment.yml file with all required dependencies.
-You will need to get an API key from OpenAI in order to run this tutorial. You will then need to add it to a .env file that is located in the root of the project that contains the line:  
+You will need to get an API key from OpenAI in order to run the rag-analysis workbook. You will then need to add the key to your `.env` file that should located in the root of the project that contains the line:  
 `OPENAI_API_KEY="your-api-key"`
 
 There are many resources online wher eyou can learn more about the purpose of RAG. Here are a couple I used when attempting this mini-project: 
