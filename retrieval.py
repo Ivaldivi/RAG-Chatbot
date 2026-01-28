@@ -168,7 +168,7 @@ if __name__ == "__main__":
 
     while True:
         user_input = input("You: ")  # Taking user input from the CLI
-        print(user_input)
+        print(f"User: {user_input}")
         if user_input =="Exit":
             break
         response = chatbot.answer(user_input)
